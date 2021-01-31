@@ -1,2 +1,0 @@
-# ShortTermRentals-DFW
-ShortTermRentals-DFW
