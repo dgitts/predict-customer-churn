@@ -1,10 +1,14 @@
 # Predict Customer Churn
 ## Problem Statement
 <p align="center"><img src="https://github.com/dgitts/Data-Science-Projects/raw/feature/problem_statement/Predict-Customer-Churn/assets/images/istockphoto-913722522-170667a2.jpg" alt="Customer Churn Cover" title="Customer Churn Cover" style="max-width:100%;"></p>
-Customer churn is the percentage of customers that stop using a company service or product during a time period. To calculate the churn rate, divide the number of customers the business lost during a time period by the number of customers the business had at the beginning of that time period.
+
+Customer churn is the percentage of customers that stop using a company service or product during a time period.
+
+To calculate the churn rate, divide the number of customers the business lost during a time period by the number of customers the business had at the beginning of that time period.
+
 Customer churn rate is an important metric for any business to evaluate because it costs more to acquire new customers than it does to retain existing ones. Returning customers are likely to spend more on various company products and services because they do not need convincing to become a customer. This reduces operating expenses for a business since they do not need to spend as much resources acquiring this business.
 
-In this project, a business would like to use data science to predict customers who are likely to stop using their credit card services. 
+In this project, a business would like to use data science to predict customers who are likely to stop using their credit card services. By using data science to predict customers who are likely to leave, a business can identify what factors affect customer retention and begin reducing customer churn by improving these factors.
 ## Data Acquisition
 We obtained this dataset from [LEAPS](https://leapsapp.analyttica.com/cases/11).
 The dataset contains 10,127 records. There are 20 features and 1 target (Attrition Flag)
