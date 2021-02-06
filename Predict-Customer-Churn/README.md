@@ -11,7 +11,10 @@ Customer churn rate is an important metric for any business to evaluate because 
 In this project, a business would like to use data science to predict customers who are likely to stop using their credit card services. By using data science to predict customers who are likely to leave, a business can identify what factors affect customer retention and begin reducing customer churn by improving these factors.
 ## Data Acquisition
 We obtained this dataset from [LEAPS](https://leapsapp.analyttica.com/cases/11).
-The dataset contains 10,127 records. There are 20 features and 1 target (Attrition Flag)
+
+The dataset contains 10,127 records. There are 20 features and 1 target (Attrition Flag).
+
+The data is structured and we will use supervised learning models to make the predictions.
 ## Data Dictionary
 | Original Column Name     | Data Type | Description                                                                                                                         |
 |--------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------|
