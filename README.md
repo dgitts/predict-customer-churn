@@ -1,6 +1,6 @@
 # Predict Customer Churn
 ## Problem Statement
-<p align="center"><img src="https://github.com/dgitts/Data-Science-Projects/raw/feature/problem_statement/Predict-Customer-Churn/assets/images/istockphoto-913722522-170667a2.jpg" alt="Customer Churn Cover" title="Customer Churn Cover" style="max-width:100%;"></p>
+<p align="center"><img src="https://github.com/dgitts/predict-customer-churn/blob/feature/problem_statement/assets/images/istockphoto-913722522-170667a2.jpg" alt="Customer Churn Cover" title="Customer Churn Cover" style="max-width:100%;"></p>
 
 Customer churn is the percentage of customers that stop using a company service or product during a time period.
 
