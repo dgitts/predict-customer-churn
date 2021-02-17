@@ -1,6 +1,7 @@
 # Predict Customer Churn
 ## Problem Statement
-<p align="center"><img src="https://github.com/dgitts/Data-Science-Projects/raw/feature/problem_statement/Predict-Customer-Churn/assets/images/istockphoto-913722522-170667a2.jpg" alt="Customer Churn Cover" title="Customer Churn Cover" style="max-width:100%;"></p>
+<p align="center"><img src="https://github.com/dgitts/predict-customer-churn/blob/feature/problem_statement/assets/images/istockphoto-913722522-170667a2.jpg" alt="Customer Churn Cover" title="Customer Churn Cover" style="max-width:100%;"></p>
+
 Customer churn is the percentage of customers that stop using a company service or product during a time period.
 To calculate the churn rate, divide the number of customers the business lost during a time period by the number of customers the business had at the beginning of that time period.
 
@@ -10,7 +11,8 @@ In this project, a bank would like to identify customer characteristics for cust
 
 The data is structured into several data points that the bank tracks for each customer. We will only use a single dataset for this project.
 ## Data Acquisition
-We obtained this dataset from [LEAPS](https://leapsapp.analyttica.com/cases/11).
+We obtained this dataset from <a href="https://leapsapp.analyttica.com/cases/11" target="_blank">LEAPS</a>. 
+
 The dataset contains 10,127 records. There are 20 features and 1 target (Attrition Flag).
 The data is structured and we will use supervised learning models to make the predictions.
 ## Data Dictionary
