@@ -39,7 +39,3 @@ The data is structured and we will use supervised learning models to make the pr
 | Total_Trans_Ct           | Int         | Total Transaction Count (Last 12 months)                                                                                            |
 | Total_Ct_Chng_Q4_Q1      | Float       | Change in Transaction Count (Q4 over Q1)                                                                                            |
 | Avg_Utilization_Ratio    | Float       | Average Card Utilization Ratio                                                                                                      |
-    
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdsprojects</small></p>
