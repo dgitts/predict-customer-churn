@@ -7,9 +7,11 @@ To calculate the churn rate, divide the number of customers the business lost du
 
 Customer churn rate is an important metric for any business to evaluate because it costs more to acquire new customers than it does to retain existing ones. Returning customers are likely to spend more on various company products and services because they do not need convincing to become a customer. This reduces operating expenses for a business since they do not need to spend as much resources acquiring this business.
 
-In this project, a bank would like to identify customer characteristics for customers who are likely to stop using their credit card services. By identifying this KPI, the bank can quickly identify what features greatly affect customer retention and begin targetting these features to minimize churn rate.
+With this dataset, a bank has collected several data points for a subset of customers who use their credit card services. Each row contains a set of features for example, Customer Age, Dependent Count, Credit Limit, Total Transaction Amount etc and a single target column called Attrition Flag. The Attrition Flag categorizes a customer as either Existing or Attrited.
+The goal of this project is to be able to predict how many existing customers are likely to be attrited. We will do this by analyzing each feature against the target column to determine what features have the strongest impact on the target. We will apply classification methods to predict customers who are likely to be in attrited status.
+By identifying what features have the strongest impact on attrition, data science can provide insight into what the bank can focus on improving to minimize churn rate.
 
-The data is structured into several data points that the bank tracks for each customer. We will only use a single dataset for this project.
+We will only use a single dataset for this project.
 ## Data Acquisition
 We obtained this dataset from <a href="https://leapsapp.analyttica.com/cases/11" target="_blank">LEAPS</a>.
 
