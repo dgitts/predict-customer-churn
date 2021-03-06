@@ -7,7 +7,7 @@ To calculate the churn rate, divide the number of customers the business lost du
 
 Customer churn rate is an important metric for any business to evaluate because it costs more to acquire new customers than it does to retain existing ones. Returning customers are likely to spend more on various company products and services because they do not need convincing to become a customer. This reduces operating expenses for a business since they do not need to spend as much resources acquiring this business.
 
-In this context, a bank would like to identify customer characteristics for customers who are likely to stop using their credit card services. By identifying KPIs, the bank can quickly identify what features greatly affect customer retention and begin targetting these features to minimize churn rate.
+In this context, a bank would like to identify customer characteristics for customers who are likely to stop using their credit card services. By identifying KPIs, the bank can quickly identify what features greatly affect customer retention and begin targeting these features to minimize churn rate.
 
 In this project we aim to alleviate costs that businesses accrue do to loss of customers, by prediction best customer retention features. We will do this by analyzing each feature against the target column to determine what features have the strongest impact on the target. The data is structured into several data points that the bank tracks for each customer. We will only use a single dataset for this project.
 
