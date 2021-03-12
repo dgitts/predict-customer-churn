@@ -15,6 +15,7 @@ In this project we aim to alleviate costs that businesses accrue do to loss of c
 We obtained this dataset from <a href="https://leapsapp.analyttica.com/cases/11" target="_blank">LEAPS</a>.
 
 The dataset contains 10,127 records. There are 20 features and 1 target (Attrition Flag).
+
 The data is structured and we will use supervised learning models to make the predictions.
 ## Data Dictionary
 | Column Name              | Data Type   | Description                                                                                                                         |
