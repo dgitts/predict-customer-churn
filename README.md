@@ -1,57 +1,43 @@
-Predict-Customer-Churn
-==============================
+# Predict Customer Churn
+## Problem Statement
+<p align="center"><img src="https://github.com/dgitts/predict-customer-churn/blob/feature/problem_statement/assets/images/istockphoto-913722522-170667a2.jpg" alt="Customer Churn Cover" title="Customer Churn Cover" style="max-width:100%;"></p>
 
-Predict customer churn
+Customer churn is the percentage of customers that stop using a company service or product during a time period.
+To calculate the churn rate, divide the number of customers the business lost during a time period by the number of customers the business had at the beginning of that time period.
 
-Project Organization
-------------
+Customer churn rate is an important metric for any business to evaluate because it costs more to acquire new customers than it does to retain existing ones. Returning customers are likely to spend more on various company products and services because they do not need convincing to become a customer. This reduces operating expenses for a business since they do not need to spend as much resources acquiring this business.
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-        ├── __init__.py    <- Makes src a Python module
-        │
-        ├── data           <- Scripts to download or generate data
-        │   └── make_dataset.py
-        │
-        ├── features       <- Scripts to turn raw data into features for modeling
-        │   └── build_features.py
-        │
-        ├── models         <- Scripts to train models and then use trained models to make
-        │   │                 predictions
-        │   ├── predict_model.py
-        │   └── train_model.py
-        │
-        └── visualization  <- Scripts to create exploratory and results oriented visualizations
-            └── visualize.py
-    
+In this context, a bank would like to identify customer characteristics for customers who are likely to stop using their credit card services. By identifying KPIs, the bank can quickly identify what features greatly affect customer retention and begin targeting these features to minimize churn rate.
 
+In this project we aim to alleviate costs that businesses accrue do to loss of customers, by prediction best customer retention features. We will do this by analyzing each feature against the target column to determine what features have the strongest impact on the target. The data is structured into several data points that the bank tracks for each customer. We will only use a single dataset for this project.
 
+## Data Acquisition
+We obtained this dataset from <a href="https://leapsapp.analyttica.com/cases/11" target="_blank">LEAPS</a>.
 
---------
+The dataset contains 10,127 records. There are 20 features and 1 target (Attrition Flag).
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdsprojects</small></p>
+The data is structured and we will use supervised learning models to make the predictions.
+## Data Dictionary
+| Column Name              | Data Type   | Description                                                                                                                         |
+|--------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Clientnum                | Int         | Client number. Unique identifier for the customer holding the account                                                               |
+| Attrition_Flag           | Categorical | Customer status variable - Existing Customer, Attrited Customer                                                                     |
+| Customer_Age             | Int         | Demographic variable - Customer's Age in Years                                                                                      |
+| Gender                   | Categorical | Demographic variable - M=Male, F=Female                                                                                             |
+| Dependent_count          | Int         | Demographic variable - Number of dependents                                                                                         |
+| Education_Level          | Categorical | Demographic variable - Educational Qualification of the account holder (example: high school, college graduate, etc.)               |
+| Marital_Status           | Categorical | Demographic variable - Married, Single, Unknown                                                                                     |
+| Income_Category          | Categorical | Demographic variable - Annual Income Category of the account holder (< $40K, $40K - 60K, $60K - $80K, $80K-$120K, > $120K, Unknown) |
+| Card_Category            | Categorical | Product Variable - Type of Card (Blue, Silver, Gold, Platinum)                                                                      |
+| Months_on_book           | Int         | Months on book (Time of Relationship)                                                                                               |
+| Total_Relationship_Count | Int         | Total no. of products held by the customer                                                                                          |
+| Months_Inactive_12_mon   | Int         | No. of months inactive in the last 12 months                                                                                        |
+| Contacts_Count_12_mon    | Int         | No. of Contacts in the last 12 months                                                                                               |
+| Credit_Limit             | Float       | Credit Limit on the Credit Card                                                                                                     |
+| Total_Revolving_Bal      | Int         | Total Revolving Balance on the Credit Card                                                                                          |
+| Avg_Open_To_Buy          | Float       | Open to Buy Credit Line (Average of last 12 months)                                                                                 |
+| Total_Amt_Chng_Q4_Q1     | Float       | Change in Transaction Amount (Q4 over Q1)                                                                                           |
+| Total_Trans_Amt          | Int         | Total Transaction Amount (Last 12 months)                                                                                           |
+| Total_Trans_Ct           | Int         | Total Transaction Count (Last 12 months)                                                                                            |
+| Total_Ct_Chng_Q4_Q1      | Float       | Change in Transaction Count (Q4 over Q1)                                                                                            |
+| Avg_Utilization_Ratio    | Float       | Average Card Utilization Ratio                                                                                                      |
